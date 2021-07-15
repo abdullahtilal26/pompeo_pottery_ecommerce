@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompeo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            height: 5rem;
+            align-items: center;
+            box-shadow: 0 3px 8px rgb(100, 98, 98,0.5);
+            /* border-bottom:  */
+             /* box-shadow: 0 10px 8px 10px red; */
+        }
+        nav h1{
+            position: absolute;
+            left: 3rem;
+            font-family: Pacifico, sans-serif;
+            font-size: 2rem;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            position: absolute;
+            right: 5rem;
+            height: 40px;
+            align-items: center;
+        }
+        li{
+            margin: 0 0.75rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: rgb(100, 98, 98);
+            font-weight: 1000;
+        }
+        .cart{
+            border-left:2px solid rgb(100, 98, 98,0.5);
+            padding-left: 15px;
+        }
+        li:hover{
+            cursor: pointer;
+            color: #e4b366;
+        }
+        /************* navbar styling end *****************/
+
+        .front-home{
+            margin-top: 5px;
+            /* z-index: -1; */
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap ;
+            background-image: url(./b2.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: cover;
+            height: 87vh;
+            /* opacity: 0.5; */
+            /* z-index: -1; */
+            /* background:url(./b2.png) center no-repeat  center/cover; */
+            /* width: 100vw; */
+          
+           
+        }
+        .front-home::before{
+            /* background-image: url(./b2.jpg);
+            background-color: beige; */
+            /* opacity: 0.1; */
+            
+            
+        }
+        .front-home .img{
+            /* display: none; */
+            /* border: 2px solid blue; */
+            position: absolute;
+            right: 0rem;
+            margin-top: 5rem;
+            width: 500px;
+            height: 300px;
+            background:url(./b1.png) no-repeat center center/cover;
+        }
+        .front-home .title{
+            /* border: 2px solid green; */
+            /* display: none; */
+            margin: 5rem 5rem
+        }
+        .front-home h2{
+            color: #df4242;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+
+            
+        }
+        .front-home h1{
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+
+
+        }
+        .front-home p{
+            font-family:  'Libre Franklin', sans-serif;
+            font-size: 17px;
+            color:rgb(100, 98, 98,0.7);
+            font-weight: 500;
+        }
+       
+        .front-home button{
+            margin-top: 50px;
+            background-color: #d42e2e;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            border: none;
+            height: 60px;
+            width: 200px;
+        }
+        .front-home button:hover{
+            background-color: black;
+            margin-top:40px ;
+            transition: 500ms;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Pompeo</h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <li class="cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg> Cart</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="front-home">
+            <div class="title">
+                <h2>
+                    POMPEO POTTERY
+                </h2>
+                <h1>
+                    Unique Porcelain &
+                    <br>
+                    Stone Collection
+                </h1>
+                <p>Unique & modern pottery made by our master in porcelain & stones</p>
+                <button>Shop Collection</button>
+            </div>
+            <div class="img"></div>
+        </section>
+    </main>
+</body>
+</html>
